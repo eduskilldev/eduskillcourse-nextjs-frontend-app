@@ -1,3 +1,7 @@
+import MobileDeveloperIcon from '@/components/svgs/mobile-developer-icon';
+import ProgrammingBasicIcon from '@/components/svgs/programming-basic-icon';
+import UiUxDesignIcon from '@/components/svgs/ui-ux-design-icon';
+import WebDeveloperIcon from '@/components/svgs/web-developer-icon';
 import Pens from '../../public/images/home/1-pens.png';
 import Mayar from '../../public/images/home/2-mayar.png';
 import Tutors4 from '../../public/images/tutors/avatar-aprillia.png';
@@ -50,14 +54,14 @@ const collaborations = [
 		image: Pens,
 		alt: 'PENS',
 		width: 53,
-		height: 53,
+		height: 54,
 	},
 	{
 		id: 2,
 		image: Mayar,
 		alt: 'MAYAR',
 		width: 137,
-		height: 58,
+		height: 59,
 	},
 ];
 
@@ -69,7 +73,7 @@ const tutorsList = [
 		description: 'Chief Technology Officer.',
 		image: Tutors1,
 		alt: 'avatar-hariz',
-        linkedinLink: 'https://www.linkedin.com/in/hariz-izzuddin',
+		linkedinLink: 'https://www.linkedin.com/in/hariz-izzuddin',
 	},
 	{
 		id: 2,
@@ -78,8 +82,8 @@ const tutorsList = [
 		description: 'Developer at Circle IT.',
 		image: Tutors2,
 		alt: 'avatar-halim',
-        githubLink: 'https://github.com/bforbilly24',
-        linkedinLink: 'https://www.linkedin.com/in/halimp',
+		githubLink: 'https://github.com/bforbilly24',
+		linkedinLink: 'https://www.linkedin.com/in/halimp',
 	},
 	{
 		id: 3,
@@ -88,8 +92,8 @@ const tutorsList = [
 		description: 'Developer at SiFabel.',
 		image: Tutors3,
 		alt: 'avatar-fahmi',
-        githubLink: 'https://github.com/riikuid',
-        linkedinLink: 'https://www.linkedin.com/in/halimp',
+		githubLink: 'https://github.com/riikuid',
+		linkedinLink: 'https://www.linkedin.com/in/halimp',
 	},
 	{
 		id: 4,
@@ -98,10 +102,41 @@ const tutorsList = [
 		description: 'UI/UX Design at Eduskill.',
 		image: Tutors4,
 		alt: 'avatar-aprillia',
-        linkedinLink: '',
+		linkedinLink: '',
+	},
+];
+
+const categoriesClass = [
+	{
+		id: 1,
+		category: 'UI/UX Design',
+		icon: <UiUxDesignIcon />,
+        alt: 'ui-ux-icon',
+		desc: 'Pelajaran tentang desain yang mencakup perkembangan terbaru.',
+	},
+	{
+		id: 2,
+		category: 'Web Development',
+		icon: <WebDeveloperIcon />,
+        alt: 'web-developer-icon',
+		desc: 'Kelas Development Website Berbasis Real Project.',
+	},
+	{
+		id: 4,
+		category: 'Mobile Development',
+		icon: <MobileDeveloperIcon />,
+        alt: 'mobile-developer-icon',
+		desc: 'Kelas Development Mobile Berbasis Real Project.',
+	},
+	{
+		id: 3,
+		category: 'Programming Basic',
+		icon: <ProgrammingBasicIcon />,
+        alt: 'programming-basic-icon',
+		desc: 'Kelas Development Dasar.',
 	},
 ];
 
 const PROTECTED_PAGES = ['/'];
 
-export { navMenuItem, svgs, collaborations, tutorsList, PROTECTED_PAGES };
+export { navMenuItem, svgs, collaborations, tutorsList, categoriesClass, PROTECTED_PAGES };

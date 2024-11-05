@@ -30,7 +30,7 @@ function Header() {
 	}, [isScrolled]);
 
 	return (
-		<header className={`transition-shadow duration-300 fixed top-0 left-0 right-0 z-50 ${isScrolled ? 'bg-white/60 shadow-md backdrop-blur-3xl' : 'bg-transparent'} dark:bg-gray-950/80 dark:backdrop-blur-xl`}>
+		<header className={`transition-shadow duration-300 fixed top-0 left-0 right-0 z-50 ${isScrolled ? 'bg-white/60 shadow-md backdrop-blur-3xl ' : 'bg-transparent'} dark:bg-gray-950/80 dark:backdrop-blur-xl`}>
 			<Navbar />
 		</header>
 	);
