@@ -1,14 +1,13 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
 	darkMode: ['class'],
-	content: ['./src/**/*.{js,jsx}'],
+	content: ['./src/**/*.{js,ts,jsx,tsx,mdx}'],
 	prefix: '',
 	theme: {
 		container: {
-			center: true,
-			padding: '2rem',
+			padding: '2.5rem',
 			screens: {
-				'2xl': '1400px',
+				'2xl': '1440px',
 			},
 		},
 		extend: {
@@ -35,6 +34,12 @@ module.exports = {
 				secondary: {
 					DEFAULT: 'hsl(var(--secondary))',
 					foreground: 'hsl(var(--secondary-foreground))',
+				},
+				eduskill: {
+					DEFAULT: '#FF7B00',
+					400: '#F8A62B',
+					500: '#FF7B00',
+					card: '#F5F5F4',
 				},
 				destructive: {
 					DEFAULT: 'hsl(var(--destructive))',
@@ -70,6 +75,11 @@ module.exports = {
 				lg: 'var(--radius)',
 				md: 'calc(var(--radius) - 2px)',
 				sm: 'calc(var(--radius) - 4px)',
+			},
+			boxShadow: {
+				'online-courses': '0px 18.36px 38.25px rgba(0, 0, 0, 0.15)',
+				'video-courses': '0px 18.36px 38.25px rgba(13, 12, 56, 0.15)',
+				custom: '0 4px 6px 0 rgba(16, 24, 40, 0.03)',
 			},
 		},
 	},
